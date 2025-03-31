@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/favicon.jpg" type="image/jpg">
+        <title>John Doe Photo</title>
+        <meta name="description" content="John Doe Photography - la vie la vraie,....">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    </head>
+    <body>
+        <!-- Loading Screen -->
+        <div id="loading-screen">
+            <p class="animate__animated animate__zoomInDown animate__faster">CHARGEMENT..</p>
+            <p class="animate__animated animate__zoomInDown">Le saviez-vous les chauves-souris on inspire Batman !</p>
+        </div>
+
+        <!-- Nav -->
+        <div class="burger-menu">
+            <div class="burger-icon" id="burger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="menu" id="menu">
+                <ul>
+                    <input type="checkbox" id="destroy">
+                    <label id="destroy-label" for="destroy">Destroy Mode</label>
+                </ul>
+                <ul>
+                    <button id="start">💣 Activer l'autodestruction</button>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <h1>John Doe - portfolio</h1>
+            <h3 id="counter-head">Autodestruction dans <span id="counter">120</span> secondes..</h3>
+
+            <!-- Homepage Slider -->
+            <div class="st-slider">
+                <div class="images">
+                    <div class="images-inner">
+                        <div class="image-slide">
+                            <img id="slider-image" src="images/palmier_slider.webp" alt="Image représentant des palmiers">
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" class="radio-btn" name="slider" id="slide1" data-image="images/palmier_slider.webp" data-alt="Image représentant des palmiers" checked/>
+                <input type="radio" class="radio-btn" name="slider" id="slide2" data-image="images/flag_slider.webp" data-alt="Image représentant un drapeau"/>
+                <input type="radio" class="radio-btn" name="slider" id="slide3" data-image="images/rock_slider.webp" data-alt="Image représentant un rocher dans l'eau"/>
+                <input type="radio" class="radio-btn" name="slider" id="slide4" data-image="images/ocean_slider.webp" data-alt="Image représentant un ocean"/>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <div class="about">
+                <p>John Doe est un photographe passionné qui capture des images époustouflantes de la nature, des événements et des personnes.</p>
+                <p>Il a voyagé dans le monde entier pour capturer des moments uniques et les partager avec le monde.</p>
+                <p>Ses photos sont un témoignage de la beauté de la vie et de la diversité de notre planète.</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/palmier_gallery.webp" alt="Image représentant des palmiers" class="item glightbox">
+                    <p> Des palmiers pour une voyage haut en couleurs.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/flag_gallery.webp" alt="Image représentant un drapeau" class="item glightbox">
+                    <p> Un couché de soleil sur une nation blamboyante.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rock_gallery.webp" alt="Image représentant un rocher dans l'eau" class="item glightbox">
+                    <p>La mer comme seul horizon.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ocean_gallery.webp" alt="Image représentant un ocean" class="item glightbox">
+                    <p>La mer comme grande source d'inspiration.</p>
+                </div>
+            </div>
+            <hr />
+
+            <div class="more">
+                <!-- Services -->
+                <div class="more">
+                    <h2>Services</h2>
+                    <p>John Doe Photography propose une gamme de services pour répondre à vos besoins en matière de photographie.</p>
+                </div>
+                
+                <ul class="more">
+                    <li id="a-nature">Photographie de la nature</li>
+                    <p id="nature" class="hidden">
+                        La photographie de la nature est bien plus qu’un simple exercice technique ; c’est une rencontre intime avec le monde qui nous entoure, un dialogue silencieux entre le photographe et les éléments. Chaque cliché est une empreinte visuelle, un instant figé qui capture la fragilité et la grandeur de notre environnement.
+                        Observer la lumière danser sur les feuillages au petit matin, saisir l’intensité d’un regard animal ou immortaliser la quiétude d’un paysage embrumé, c’est s’offrir une fenêtre sur l’invisible, sur ce que l’œil distrait ne perçoit pas toujours. La nature, en perpétuel mouvement, impose sa propre cadence et exige du photographe patience et humilité.
+                        Mais au-delà de l’esthétisme, la photographie de la nature porte un message. Elle documente, sensibilise, témoigne des bouleversements climatiques, de la richesse de la biodiversité, et parfois même de sa disparition progressive. Un simple cliché peut éveiller des consciences, susciter l’émerveillement autant que l’interrogation.
+                        Sublimer la nature à travers l’objectif, c’est aussi apprendre à la respecter, à la comprendre, à s’effacer pour mieux la révéler. Loin de l’artifice, elle impose une authenticité rare, où le photographe devient à la fois témoin et messager d’un monde qu’il capture avec passion.
+                        La photographie de la nature est donc une quête, une aventure où l’art rencontre la réalité, où chaque image devient une mémoire, un hommage, une émotion suspendue entre le temps et l’espace.
+                    </p>
+                    <li id="a-events">Photographie d'événements</li>
+                    <p id="events" class="hidden">
+                        La photographie d’événements est bien plus qu’un simple enchaînement de clichés. C’est l’art de capturer l’instant, de figer les émotions et de raconter une histoire à travers l’image. Mariages, concerts, conférences, festivals ou soirées privées : chaque événement possède une atmosphère unique que le photographe doit restituer avec justesse et sensibilité.
+                        Un bon photographe d’événements sait anticiper les moments clés. Il ne se contente pas de documenter, il immortalise les regards échangés, les éclats de rire, l’intensité d’un discours ou la spontanéité d’une accolade. Son œil aiguisé lui permet d’être au bon endroit, au bon moment, sans perturber le déroulement de l’événement.
+                        Mais la technique ne suffit pas. La maîtrise de la lumière, des cadrages et des compositions est essentielle, surtout lorsque les conditions sont changeantes : éclairage tamisé d’une salle de réception, jeux de lumières d’un concert, mouvement constant d’une foule en fête. Chaque contexte exige une adaptation rapide et une parfaite connaissance du matériel.
+                        Au-delà de l’instantané, la photographie d’événements crée des souvenirs durables. Pour les organisateurs comme pour les participants, ces images deviennent des témoignages précieux, des fragments de vie qui permettent de revivre l’intensité d’un moment, même des années plus tard.
+                        Finalement, être photographe d’événements, c’est être un conteur visuel, un artisan de la mémoire qui capture l’éphémère pour en faire un héritage intemporel.
+                    </p>
+                    <li id="a-pepeole">Photographie de personnes</li>
+                    <p id="pepeole" class="hidden">
+                        La photographie de personnes est bien plus qu’un simple exercice technique ; c’est un art subtil où chaque portrait raconte une histoire, révèle une émotion et immortalise un instant de vie. Derrière chaque regard capturé, chaque sourire figé ou chaque expression saisie, il y a une âme, une personnalité, une authenticité que le photographe cherche à sublimer.
+                    </p>
+                    <li id="a-photo">Retouche photo</li>
+                    <p id="photo" class="hidden">
+                        La retouche photo est une étape essentielle du processus photographique. Loin d’être une simple correction, elle permet d’optimiser une image, d’affiner les détails et d’exprimer une vision artistique. Qu’il s’agisse d’améliorer l’éclairage, d’ajuster les couleurs ou d’affiner la composition, la retouche donne une seconde vie à la photographie, tout en respectant son authenticité.
+                    </p>
+                </ul>
+
+                <!-- Contact -->
+                <div class="more">
+                    <h2>Contact</h2>
+                </div>
+                <p>Email: john@photography.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </main>
+        <hr >
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 John Doe Photography</p>
+        </footer>
+
+        <script src="scripts/loader.js"></script>
+        <script src="scripts/slider.js"></script>
+        <script src="scripts/more.js"></script>
+        <script src="scripts/intense.min.js"></script>
+        <script src="scripts/scaleup.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/destroy.js"></script>
+        <script src="scripts/counter.js"></script>
+    </body>
+</html>
